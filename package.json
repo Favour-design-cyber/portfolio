@@ -1,0 +1,17 @@
+{
+  "name": "myweb",
+  "version": "1.0.0",
+  "description": "this is the website for me, Favour Oluwadamilare",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Favour oluwadamilare",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.1.0"
+  }
+}
