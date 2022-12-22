@@ -12,31 +12,89 @@
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 12rem;
   cursor: pointer;
 }
 
-.logo-box:active,
-.logo-box:visited {
+.header__logo-box:active,
+.header__logo-box:visited {
   color: #222;
 }
 
-.logo:hover {
+.header__logo:hover {
   transform: scale(1.2);
   transition: all 0.5s;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem #626262;
+  background-color: #222;
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+}
+
+.btn:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--white:after {
+  background-color: white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.btn--animated {
+  animation: moveInbottom 2s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
