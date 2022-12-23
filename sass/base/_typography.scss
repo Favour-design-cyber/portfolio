@@ -74,3 +74,11 @@ body {
   width: 30rem;
   letter-spacing: 0.4rem;
 }
+
+.paragraph {
+  font-size: 2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
