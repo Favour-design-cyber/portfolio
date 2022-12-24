@@ -38,14 +38,10 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  display: inline-block;
+  color: $color-primary;
+  // display: inline-block;
   -webkit-background-clip: text;
-  color: transparent;
+  // color: transparent;
   transition: all 0.2s;
 
   &:hover {
@@ -77,6 +73,7 @@ body {
 
 .paragraph {
   font-size: 2rem;
+  color: $color-primary-dark;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

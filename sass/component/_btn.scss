@@ -22,7 +22,14 @@
 
 .btn-white {
   background-color: #fff;
-  color: #555;
+  color: #000;
+  box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.15);
+}
+
+.btn-icon-1 {
+  margin-left: 0.2rem;
+  margin-bottom: -0.2rem;
+  color: #000;
 }
 
 .btn:after {
@@ -38,10 +45,6 @@
   transition: all 0.4s;
 }
 
-.btn-white:after {
-  background-color: white;
-}
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
@@ -49,4 +52,36 @@
 .btn-animated {
   animation: moveInbottom 2s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 0.1rem solid $color-primary;
+    padding: 0.3rem;
+    transition: all 0.5s;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &:hover {
+    // color: $color-primary;
+    // background-color: $color-grey-light-1;
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.15);
+    transform: translateY(-0.5rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.15);
+    transform: translateY(0rem);
+  }
+}
+
+.btn-icon-2 {
+  // margin-top: 4rem;
+  margin-left: 0.8rem;
+  margin-bottom: -0.2rem;
 }

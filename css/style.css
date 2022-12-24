@@ -65,10 +65,8 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
-  background-image: linear-gradient(to right, #777, #000000);
-  display: inline-block;
+  color: #3f2c02;
   -webkit-background-clip: text;
-  color: transparent;
   transition: all 0.2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) scale(1.1);
@@ -95,7 +93,8 @@ body {
   letter-spacing: 0.4rem; }
 
 .paragraph {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #000000; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -126,7 +125,13 @@ body {
 
 .btn-white {
   background-color: #fff;
-  color: #555; }
+  color: #000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn-icon-1 {
+  margin-left: 0.2rem;
+  margin-bottom: -0.2rem;
+  color: #000; }
 
 .btn:after {
   content: "";
@@ -140,9 +145,6 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn-white:after {
-  background-color: white; }
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
@@ -151,12 +153,39 @@ body {
   animation: moveInbottom 2s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #3f2c02;
+  padding: 0.3rem;
+  transition: all 0.5s;
+  background-color: #3f2c02;
+  color: #fff; }
+
+.btn-text:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0rem); }
+
+.btn-icon-2 {
+  margin-left: 0.8rem;
+  margin-bottom: -0.2rem; }
+
+.composition__photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin-left: 10rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.95)), url(../img/img1.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
 
 .header__logo-box {
@@ -181,7 +210,8 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  margin-top: 5rem; }
 
 .btn--white {
   background-color: #fff;
@@ -249,7 +279,7 @@ body {
       margin-right: 6rem; }
 
 .section-about {
-  background-color: #dcae96;
+  background-color: #eee;
   padding: 25rem 0;
   margin-top: -20vh; }
 

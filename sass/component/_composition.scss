@@ -1,0 +1,8 @@
+.composition {
+  &__photo {
+    width: 60%;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, 0.2);
+    border-radius: 1rem;
+    margin-left: 10rem;
+  }
+}
