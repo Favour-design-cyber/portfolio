@@ -108,10 +108,13 @@ body {
   color: #3f2c02; }
 
 .top-paragraph {
-  font-size: 2rem;
+  font-size: 1.7rem;
   width: 80rem;
   margin-left: 20rem;
   margin-top: 5rem; }
+
+.services {
+  background-color: #eee; }
 
 .u-center-text {
   text-align: center; }
