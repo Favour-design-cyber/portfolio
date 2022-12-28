@@ -105,16 +105,14 @@ body {
 .Top-skills-div {
   text-align: center;
   justify-content: center;
-  color: #3f2c02; }
+  color: #3f2c02;
+  margin-top: 15rem; }
 
 .top-paragraph {
   font-size: 1.7rem;
-  width: 80rem;
-  margin-left: 20rem;
-  margin-top: 5rem; }
-
-.services {
-  background-color: #eee; }
+  width: 70rem;
+  margin-left: 25rem;
+  margin-top: 1rem; }
 
 .u-center-text {
   text-align: center; }
@@ -385,6 +383,22 @@ img:hover {
 
 .section-projects {
   padding: 20rem 0; }
+
+.section-services {
+  background-color: #eee;
+  background-size: cover;
+  transform: skewY(2deg);
+  padding: 5rem 0;
+  margin-top: 15rem; }
+  .section-services > * {
+    transform: skewY(-2deg); }
+
+.services-header {
+  font-size: 4rem; }
+
+.sub-section {
+  font-size: 1.7rem;
+  color: #3f2c02; }
 
 * {
   margin: 0;
