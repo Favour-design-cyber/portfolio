@@ -209,6 +209,31 @@ body {
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgb; }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 30rem; }
+  .card__side {
+    font-size: 2rem;
+    height: 30rem;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: red;
+      width: 25rem; }
+    .card__side--back {
+      background-color: black;
+      transform: rotateY(180deg);
+      width: 25rem; }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.95)), url(../img/img1.jpg);
