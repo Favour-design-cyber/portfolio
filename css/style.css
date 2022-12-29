@@ -221,16 +221,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
-      background-color: red;
+      background-color: #fff;
       width: 25rem; }
     .card__side--back {
-      background-color: black;
       transform: rotateY(180deg);
       width: 25rem; }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #dcae96, #b08528); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
 
