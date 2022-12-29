@@ -50,7 +50,7 @@
   opacity: 0;
 }
 .btn-animated {
-  animation: moveInbottom 2s ease-out 0.75s;
+  animation: moveInbottom 1s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
 
@@ -84,4 +84,14 @@
   // margin-top: 4rem;
   margin-left: 0.8rem;
   margin-bottom: -0.2rem;
+}
+
+.contact {
+  margin-top: 0.5rem;
+  margin-left: 6rem;
+}
+
+.me-btn {
+  margin-left: 0.6rem;
+  margin-bottom: -0.3rem;
 }

@@ -46,3 +46,11 @@
     );
   }
 }
+
+.personal {
+  margin-left: 27rem;
+  .col-1 {
+    width: calc((80% - #{$gutter-horizontal}) / 2);
+    overflow: hidden;
+  }
+}

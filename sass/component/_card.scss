@@ -1,11 +1,12 @@
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 30rem;
+  height: 50rem;
+  width: 25rem;
 
   &__side {
     font-size: 2rem;
-    height: 30rem;
+    height: 52rem;
     transition: all 0.8s;
 
     position: absolute;
@@ -14,10 +15,11 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 0.3rem;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, 0.15);
 
     &--front {
-      background-color: #fff;
+      background-color: $color-white;
       width: 25rem;
     }
 
@@ -41,5 +43,99 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: soft-light;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 5.85),
+          rgba($color-secondary-light, 5.85)
+        ),
+        url(../img/website-dev.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/wordpress-design.jpg);
+      background-blend-mode: saturation !important;
+    }
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    margin-top: -1.5rem;
+    width: 100%;
+  }
+
+  &__heading-span {
+    padding: 0.7rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 1rem;
+    ul {
+      list-style: none;
+      width: 100%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        color: $color-primary;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-1;
+        }
+      }
+    }
+  }
+
+  &cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__question-box {
+    text-align: center;
+    margin-top: 8rem;
+    color: $color-white;
+  }
+
+  &__question-only {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: #000;
+  }
+
+  &__question-text {
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+    margin-top: 8rem;
   }
 }
