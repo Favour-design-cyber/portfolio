@@ -358,7 +358,7 @@ body {
   width: 40px;
   border-radius: 50%;
   position: absolute;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12 px 24px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -411,7 +411,7 @@ body {
 
 .portfolio-head {
   margin-top: -10rem;
-  margin-right: 5rem;
+  margin-right: 4.5rem;
   font-size: 3.5rem;
   font-weight: 700;
   color: #3f2c02;
