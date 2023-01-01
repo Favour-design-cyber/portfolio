@@ -313,20 +313,6 @@ body {
   font-weight: 700;
   margin-top: 10rem; }
 
-.carousel {
-  width: 90rem;
-  margin: 5rem 12.5rem;
-  background-color: #fff;
-  /* padding: 32px; */
-  /* padding-left: 86px; */
-  /* padding-right: 48px; */
-  padding: 32px 48px 32px 86px;
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 86px; }
-
 .portfolio-image {
   height: 30rem;
   width: 40rem;
@@ -421,6 +407,51 @@ body {
 .portfolio-image:hover {
   transform: scale(1.1);
   transition: all 0.9s; }
+
+.carousel {
+  width: 90rem;
+  height: 40rem;
+  margin: 5rem 12.5rem;
+  background-color: #fff;
+  /* padding: 32px; */
+  /* padding-left: 86px; */
+  /* padding-right: 48px; */
+  padding: 32px 48px 32px 86px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 86px; }
+
+.caurosel-item {
+  opacity: 0;
+  transition: all 0.5s ease-in-out; }
+
+.arrow-prev {
+  transform: translateY(-50%) rotate(135deg); }
+
+.arrow-next {
+  transform: translateY(-50%) rotate(-45%);
+  position: absolute; }
+
+[id^="item"] {
+  display: none; }
+
+.item-1 {
+  z-index: 2;
+  opacity: 1; }
+
+*:target ~ .item-1 {
+  opacity: 0; }
+
+#item-1:target ~ .item-1 {
+  opacity: 1; }
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4 {
+  z-index: 3;
+  opacity: 1; }
 
 .header {
   height: 95vh;
