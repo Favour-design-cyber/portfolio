@@ -408,9 +408,12 @@ body {
   transform: scale(1.1);
   transition: all 0.9s; }
 
+.display-portfolio {
+  position: relative; }
+
 .carousel {
   width: 90rem;
-  height: 40rem;
+  height: 43rem;
   margin: 5rem 12.5rem;
   background-color: #fff;
   /* padding: 32px; */
@@ -425,7 +428,8 @@ body {
 
 .caurosel-item {
   opacity: 0;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  position: absolute; }
 
 .arrow-prev {
   transform: translateY(-50%) rotate(135deg); }
