@@ -376,25 +376,6 @@ body {
   width: 24px;
   stroke: #b08528; }
 
-.dots {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 32px);
-  display: flex;
-  gap: 12px; }
-
-.dot {
-  height: 12px;
-  width: 12px;
-  background-color: #fff;
-  border: 2px solid #b08528;
-  border-radius: 50%;
-  cursor: pointer; }
-
-.dot--fill {
-  background-color: #b08528; }
-
 .portfolio-head {
   margin-top: -10rem;
   margin-right: 4.5rem;
@@ -432,7 +413,7 @@ body {
   position: absolute; }
 
 .arrow-prev {
-  transform: translateY(-50%) rotate(135deg); }
+  transform: translateY(-50%); }
 
 .arrow-next {
   transform: translateY(-50%) rotate(-45%);
@@ -456,6 +437,32 @@ body {
 #item-4:target ~ .item-4 {
   z-index: 3;
   opacity: 1; }
+
+.item-2-head {
+  margin-left: -11rem; }
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #b08528;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center; }
+
+.dot--fill {
+  background-color: #b08528; }
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  display: flex;
+  gap: 12px; }
 
 .header {
   height: 95vh;

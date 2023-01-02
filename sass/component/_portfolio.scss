@@ -84,28 +84,6 @@
   width: 24px;
   stroke: $color-secondary-dark;
 }
-.dots {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 32px);
-
-  display: flex;
-  gap: 12px;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  background-color: #fff;
-  border: 2px solid $color-secondary-dark;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot--fill {
-  background-color: $color-secondary-dark;
-}
 
 .portfolio-head {
   margin-top: -10rem;
