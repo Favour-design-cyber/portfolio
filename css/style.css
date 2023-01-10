@@ -389,6 +389,9 @@ body {
   transform: scale(1.1);
   transition: all 0.9s; }
 
+.crapo-head {
+  margin-left: -9rem; }
+
 .display-portfolio {
   position: relative; }
 
@@ -460,7 +463,7 @@ body {
   bottom: 0;
   transform: translate(-50%, 32px);
   margin-bottom: 4rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   display: flex;
   gap: 12px; }
 
