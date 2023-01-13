@@ -1,0 +1,26 @@
+.footer-secondary{
+  height: 40rem;
+  position: absolute;
+  background-color: $color-secondary-light;
+  margin-top: 60rem;
+  width: 120rem;
+}
+
+.footer-heading{
+  color: $color-primary-dark;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-part {
+  color: yellow;
+  position: absolute;
+  margin-top: 66rem;
+  border: 2px solid;
+  border-color: red;
+  width: 100rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+  height: 30rem;
+}

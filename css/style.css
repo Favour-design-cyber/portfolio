@@ -392,9 +392,6 @@ body {
 .crapo-head {
   margin-left: -9rem; }
 
-.display-portfolio {
-  position: relative; }
-
 .carousel {
   width: 90rem;
   height: 43rem;
@@ -405,7 +402,6 @@ body {
   /* padding-right: 48px; */
   padding: 32px 48px 32px 86px;
   border-radius: 8px;
-  position: relative;
   display: flex;
   align-items: center;
   gap: 86px; }
@@ -467,6 +463,30 @@ body {
   display: flex;
   gap: 12px; }
 
+.footer-secondary {
+  height: 40rem;
+  position: absolute;
+  background-color: #dcae96;
+  margin-top: 60rem;
+  width: 120rem; }
+
+.footer-heading {
+  color: #000000;
+  text-align: center;
+  justify-content: center; }
+
+.footer-part {
+  color: yellow;
+  position: absolute;
+  margin-top: 66rem;
+  border: 2px solid;
+  border-color: red;
+  width: 100rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+  height: 30rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.95)), url(../img/img1.jpg);
@@ -490,7 +510,8 @@ body {
 
 .header__logo:hover {
   transform: scale(1.2);
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  background-color: none; }
 
 .header__text-box {
   position: absolute;
